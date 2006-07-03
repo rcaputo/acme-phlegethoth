@@ -75,7 +75,7 @@ Acme::Phlegethoth - Improve your code's readability, if you're an Ancient One
 
 Acme::Phlegethoth improves the readability of your Perl programs to
 the Elder Gods.  This may accelerate a debugging session where you
-feel compelled to invoke them.  After all, if you're outsourcing some
+feel compelled to invoke them.  After all, if you're outsourcing
 development to Cthulhu, you'd better damn well be sure He can read
 your code.
 
@@ -90,7 +90,7 @@ as before, but it now looks something like this:
 	HliRGHog eHYeOG nnnSgn'WAhL fm'laTgh ah ILYaA h'zHRO iLYaa
 	H'gnaIihNYtH EBumnA s'Uhnor [Text ends abruptly.]
 
-which (loosely) translates to:
+which loosely translates to:
 
 	Hear me!
 
@@ -98,8 +98,8 @@ which (loosely) translates to:
 	into our Church!  Watch over them, protect them!  These heretic
 	children will enter the beyond to sleep beside our Master!
 
-	Tell us what to do when the Servants of your Father rise from the
-	Pit to fulfil his pact.
+	Prepare us for the time when the Servants of your Father rise from
+	the Pit to fulfil his pact.
 
 	Our unshaken belief will protect our place on Earth!
 
@@ -117,8 +117,8 @@ Aklo.  The Ancient Ones will be most displeased.
 =item C<Can't banish '%s'>
 
 Acme::Phlegethoth could not access your prayer to execute it.  Never
-let this happen.  The Sleeping Ones do not like to be awakened for
-nothing.
+let this happen.  The Sleeping Ones do not like to be awakened without
+reason.
 
 =head1 AUTHOR
 
@@ -128,8 +128,8 @@ This was loosely based on Leon Brocard's Acme::Buffy, which in turn
 was based on Damian Conway's Bleach module.  That was inspired by an
 idea by Philip Newton.  By now there's enough blame for everyone.
 
-But really sparked my imagination was Meng Weng Wong's quoting a
-couple Ruby users:
+But what really sparked my imagination was Meng Weng Wong's quote from
+a couple Ruby users:
 
 	<flippo> ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!
 	<ibroadfo> flippo: don't paste perl in here
