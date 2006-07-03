@@ -8,7 +8,7 @@ WriteMakefile(
 	NAME	        => 'Acme::Phlegethoth',
 	AUTHOR        => 'Rocco Caputo <rcaputo@cpan.org>',
 	VERSION_FROM  => 'lib/Acme/Phlegethoth.pm',
-	ABSTRACT      => 'Software is native to cyberspace.',
+	ABSTRACT      => "Improve your code's readability, if you're an Ancient One",
 	dist          => {
 		COMPRESS    => 'gzip -9f',
 		SUFFIX      => 'gz',

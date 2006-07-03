@@ -64,7 +64,7 @@ __END__
 
 =head1 NAME
 
-Acme::Phlegethoth - Software is native to cyberspace.
+Acme::Phlegethoth - Improve your code's readability, if you're an Ancient One
 
 =head1 SYNOPSIS
 
