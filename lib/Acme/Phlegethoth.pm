@@ -52,12 +52,12 @@ sub roll_sanity_check { &see }
 sub import {
 	no strict 'refs';
 	open 0 or warn "Can't summon '$0'\n" and exit;
-	(my $old1 = join "", <0>) =~ s/.*^\s*use\s+Acme::Phlegethoth\s*;\n//sm;
+	(my $old1 = join "", <0>) =~ s/.*^\s*use\s+Acme('|::)Phlegethoth\s*;\n//sm;
 	local $SIG{__WARN__} = \&roll_sanity_check;
 	do {eval banish $old1; exit} unless see $old1 and not comprehend $old1;
 	open 0, ">$0" or warn "Can't banish '$0'\n" and exit;
-	print {0} "use Acme::Phlegethoth;\n", summon $old1 and exit;
-	print "use Acme::Phlegethoth;\n", summon $old1 and exit;
+	print {0} "use Acme'Phlegethoth;\n", summon $old1 and exit;
+	print "use Acme'Phlegethoth;\n", summon $old1 and exit;
 }
 
 __END__
@@ -83,7 +83,7 @@ Acme::Phlegethoth translates your code to Aklo the first time your
 program uses it.  From that point on, your program continues to work
 as before, but it now looks something like this:
 
-	use Acme::Phlegethoth;
+	use Acme'Phlegethoth;
 	ia ia!  mnahN' NAflHriI R'LuHnyTh BUgoR SLl'HAog gOf'NN Hai ron
 	gOf'nn Nnn'aIog FHTagN LlLL YHlIRgHOG GoF'Nn naCh'!  nNNvuLgtlAGlN
 	thROD!  PhLeGetH StelL'BsNaoth sll'Ha!  aH NAfL'AIyAR H'EbUMna
