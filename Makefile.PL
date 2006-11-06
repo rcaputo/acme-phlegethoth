@@ -5,9 +5,10 @@ use strict;
 
 use ExtUtils::MakeMaker;
 WriteMakefile(
-	NAME	        => 'Acme::Phlegethoth',
+	NAME          => 'Acme::Phlegethoth',
 	AUTHOR        => 'Rocco Caputo <rcaputo@cpan.org>',
 	VERSION_FROM  => 'lib/Acme/Phlegethoth.pm',
+	LICENSE       => 'perl',
 	ABSTRACT      => "Improve your code's readability, if you're an Ancient One",
 	dist          => {
 		COMPRESS    => 'gzip -9f',
