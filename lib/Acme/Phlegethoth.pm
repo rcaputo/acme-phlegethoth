@@ -136,11 +136,23 @@ a couple Ruby users:
 
 They will of course be eaten last.
 
+=head1 BUG TRACKER
+
+https://rt.cpan.org/Dist/Display.html?Status=Active&Queue=Acme-Phlegethoth
+
+=head1 REPOSITORY
+
+http://thirdlobe.com/svn/acme-phlegethoth/
+
+=head1 OTHER RESOURCES
+
+http://search.cpan.org/dist/Acme-Phlegethoth/
+
 =head1 COPYRIGHT
 
-Copyright (c) 2006, Rocco Caputo.  All Rights Reserved.  This module
-is free software.  It may be used, redistributed and/or modified under
-the same terms as Perl itself.
+Copyright (c) 2006-2009, Rocco Caputo.  All Rights Reserved.  This
+module is free software.  It may be used, redistributed and/or
+modified under the same terms as Perl itself.
 
 Thanks to the "Cthuvian / English Dictionary" for providing the
 lexicon and translations in one convenient place.
