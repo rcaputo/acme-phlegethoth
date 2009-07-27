@@ -3,7 +3,7 @@ package Acme::Phlegethoth;
 use warnings;
 use strict;
 
-our $VERSION  = '1.02';
+our $VERSION  = '1.03';
 my $hear_me   = "ia ia! ";
 my $amen      = " [Text ends abruptly.]\n";
 my @pre       = qw( c f' h' na nafl ng nnn ph' y );

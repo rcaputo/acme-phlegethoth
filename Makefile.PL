@@ -10,6 +10,13 @@ WriteMakefile(
 	VERSION_FROM  => 'lib/Acme/Phlegethoth.pm',
 	LICENSE       => 'perl',
 	ABSTRACT      => "Improve your code's readability, if you're an Ancient One",
+	META_ADD      => {
+		resources   => {
+			license    => 'http://dev.perl.org/licenses/',
+			repository => 'http://thirdlobe.com/svn/acme-phlegethoth/trunk'
+
+		},
+	},
 	dist          => {
 		COMPRESS    => 'gzip -9f',
 		SUFFIX      => 'gz',
