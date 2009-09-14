@@ -140,11 +140,11 @@ They will of course be eaten last.
 
 =head2 BUG TRACKER
 
-https://rt.cpan.org/Dist/Display.html?Status=Active&Queue=Acme-Phlegethoth
+https://rt.cpan.org/Dist/Display.html?Queue=Acme-Phlegethoth
 
 =head2 REPOSITORY
 
-http://thirdlobe.com/svn/acme-phlegethoth/
+http://github.com/rcaputo/acme-phlegethoth
 
 =head2 OTHER RESOURCES
 
