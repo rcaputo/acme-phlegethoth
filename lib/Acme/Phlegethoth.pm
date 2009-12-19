@@ -3,7 +3,7 @@ package Acme::Phlegethoth;
 use warnings;
 use strict;
 
-our $VERSION  = '1.04';
+our $VERSION  = '1.05';
 my $hear_me   = "ia ia! ";
 my $amen      = " [Text ends abruptly.]\n";
 my @pre       = qw( c f' h' na nafl ng nnn ph' y );
@@ -46,18 +46,21 @@ sub banish {
 }
 
 sub see { $_[0] =~ /\S/ }
-sub comprehend { $_[0] =~ /^$hear_me/ }
+sub comprehend { $_[0] =~ /^\Q$hear_me/ }
 sub roll_sanity_check { &see }
 
 sub import {
 	no strict 'refs';
 	open 0 or warn "Can't summon '$0'\n" and exit;
-	(my $old1 = join "", <0>) =~ s/.*^\s*use\s+Acme('|::)Phlegethoth\s*;\n//sm;
+	(my $old1 = join "", <0>) =~ (
+		s/(.*^\s*)use\s+Acme('|::)Phlegethoth\s*;\s*\n//sm
+	);
+	my $harbinger = $1 || "";
 	local $SIG{__WARN__} = \&roll_sanity_check;
 	do {eval banish $old1; exit} unless see $old1 and not comprehend $old1;
 	open 0, ">$0" or warn "Can't banish '$0'\n" and exit;
-	print {0} "use Acme'Phlegethoth;\n", summon $old1 and exit;
-	print "use Acme'Phlegethoth;\n", summon $old1 and exit;
+	print {0} "${harbinger}use Acme'Phlegethoth;\n", summon $old1 and exit;
+	print "${harbinger}use Acme'Phlegethoth;\n", summon $old1 and exit;
 }
 
 __END__
